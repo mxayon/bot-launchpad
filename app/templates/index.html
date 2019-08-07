@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  {% if title %}
+  <title>{{ title }} Launchpad</title>
+  {% else %}
+  <title> Welcome to the Bot Launchpad </title>
+  {% endif %}
+</head>
+
+<body>
+  <h1>Hello, {{user.username}}! </h1>
+  <h3> Are you looking for the Bot Launchpad?</h3>
+  <p> If so, you have arrived. </p>
+  {% for post in posts %}
+  <hr>
+  <div>
+    <p> {{ post.bot.botname }}: for help with -
+      <b>{{ post.function }}</b>
+    </p>
+  </div>
+  {% endfor %}
+</body>
+
+</html>

@@ -9,3 +9,4 @@
 
 pips:
 python-dotenv
+-> runs flask app as = flask run on command-line
