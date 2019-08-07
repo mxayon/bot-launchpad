@@ -6,3 +6,6 @@
 ### Contents
 
 ### Libraries Used
+
+pips:
+python-dotenv
