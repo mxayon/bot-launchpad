@@ -1,1 +1,8 @@
-# bot-launchpad starter
+# bot-launchpad
+
+## A launchpad for python mini-bots made with Flask
+
+
+### Contents
+
+### Libraries Used
