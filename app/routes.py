@@ -32,7 +32,7 @@ def about():
 
 @app.route('/workspace')
 def workspace():
-    return render_template('workspace.html')
+    return render_template('workspace.html', bot='Botswerk')
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
