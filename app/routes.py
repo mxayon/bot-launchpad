@@ -28,8 +28,11 @@ def index():
 
 @app.route('/about')
 def about():
-
     return render_template('about.html', title='About')
+
+@app.route('/workspace')
+def workspace():
+    return render_template('workspace.html')
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
