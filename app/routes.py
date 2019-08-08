@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, url_for
 from app import app
 
 @app.route('/')
@@ -13,13 +13,23 @@ def index():
         {
             'bot': {'botname': 'Palindrometer'},
             'function': 'checks if word is a palindrome'
+        },
+        {
+            'bot': {'botname': 'Thermobot'},
+            'function': 'temparature analyzer'
+        },
+        {
+            'bot': {'botname': 'Count-Drac'},
+            'function': 'counts words in article given by user'
         }
+
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
-    
+
 @app.route('/about')
 def about():
-    return render_template('about.html', title='Home')
+
+    return render_template('about.html', title='About')
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
