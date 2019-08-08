@@ -1,0 +1,21 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  {% if title %}
+  <title>{{ title }} Launchpad</title>
+  {% else %}
+  <title> Bot Launchpad </title>
+  {% endif %}
+</head>
+
+<body>
+  <div> Bot Launchpad:
+    <a href="/index">Home</a>
+    <a href="/about">About</a>
+  </div>
+  <hr>
+  {% block content %} {% endblock %}
+</body>
+
+</html>
