@@ -16,6 +16,10 @@ def index():
         }
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
+    
+@app.route('/about')
+def about():
+    return render_template('about.html', title='Home')
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
