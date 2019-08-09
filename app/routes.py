@@ -7,19 +7,19 @@ def index():
     user = {'username': 'Maximo'}
     posts = [
         {
-            'bot': {'botname': 'Mini-Calc'},
+            'bot': {'botname': 'mini-calc'},
             'function': 'basic arithmetic (2 user given values)'
         },
         {
-            'bot': {'botname': 'Palindrometer'},
+            'bot': {'botname': 'palindrometer'},
             'function': 'checks if word is a palindrome'
         },
         {
-            'bot': {'botname': 'Thermobot'},
+            'bot': {'botname': 'thermobot'},
             'function': 'temparature analyzer'
         },
         {
-            'bot': {'botname': 'Count-Drac'},
+            'bot': {'botname': 'count-drac'},
             'function': 'counts words in article given by user'
         }
 
@@ -33,6 +33,11 @@ def about():
 @app.route('/workspace')
 def workspace():
     return render_template('workspace.html', bot='Botswerk')
+
+@app.route('/mini-calc')
+def minicalc():
+    return "I am MINI-CALC"
+
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
