@@ -38,6 +38,10 @@ def workspace():
 def minicalc():
     return "I am MINI-CALC"
 
+@app.route('/palindrometer')
+def palindrometer():
+    return "I am PALINDROMETER"
+
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
