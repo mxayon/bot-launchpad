@@ -46,6 +46,9 @@ def palindrometer():
 def thermobot():
     return "I am THERMOBOT"
 
+@app.route('count-drac')
+def countdrac():
+    return "I am COUNT-DRAC"
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
