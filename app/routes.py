@@ -42,6 +42,10 @@ def minicalc():
 def palindrometer():
     return "I am PALINDROMETER"
 
+@app.route('/thermobot')
+def thermobot():
+    return "I am THERMOBOT"
+
 
 # '''
 # <h1> Hello, ''' + user['username']+ '''!</h1>
