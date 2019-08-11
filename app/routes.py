@@ -31,6 +31,16 @@ def index():
 def about():
     return render_template('about.html', title='About')
 
+@app.route('/register')
+def register():
+    form = RegisterForm()
+    return render_template('register.html', title='Sign Up', form=form)
+
+@app.route*=('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html', title='Log In', form=form)
+
 @app.route('/workspace')
 def workspace():
     return render_template('workspace.html', bot='Botswerk')
