@@ -10,19 +10,27 @@ def index():
     posts = [
         {
             'bot': {'botname': 'mini-calc'},
-            'function': 'basic arithmetic (2 user given values)'
+            'function': 'basic arithmetic (2 user given values)',
+            'id':'1',
+            'status': 'ready to launch!'
         },
         {
             'bot': {'botname': 'palindrometer'},
-            'function': 'checks if word is a palindrome'
+            'function': 'checks if word is a palindrome',
+            'id':'2',
+            'status': 'uploading...'
         },
         {
             'bot': {'botname': 'thermobot'},
-            'function': 'temparature analyzer'
+            'function': 'temparature analyzer',
+            'id':'3',
+            'status': 'coming soon...'
         },
         {
             'bot': {'botname': 'count-drac'},
-            'function': 'counts words in article given by user'
+            'function': 'counts words in article given by user',
+            'id':'4',
+            'status': 'in progress...'
         }
 
     ]
