@@ -6,10 +6,18 @@
 ### Contents
 
 ### Libraries Used (pips)
+Main:
+Python 3.7,
+Flask
 
 pips:
 python-dotenv
 -> runs flask app as = flask run on command-line
+
+wtforms
+-> python forms
+
+
 
 ### Extra Resources:
 [Flask mega tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
