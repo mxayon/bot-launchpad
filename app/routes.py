@@ -1,5 +1,4 @@
-from flask import render_template, url_for
-from forms import RegisterForm, LoginForm
+from flask import Flask, render_template, url_for, flash, redirect
 from app import app
 from app.forms import RegisterForm, LoginForm
 
