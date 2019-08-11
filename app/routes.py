@@ -32,12 +32,15 @@ def index():
 def about():
     return render_template('about.html', title='About')
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegisterForm()
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
+        return redirect(url_for('Home'))
     return render_template('register.html', title='Sign Up', form=form)
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
     return render_template('login.html', title='Log In', form=form)
