@@ -1,6 +1,8 @@
 from flask import render_template, url_for
 from forms import RegisterForm, LoginForm
 from app import app
+from app.forms import RegisterForm, LoginForm
+
 
 @app.route('/')
 @app.route('/index')
@@ -36,7 +38,7 @@ def register():
     form = RegisterForm()
     return render_template('register.html', title='Sign Up', form=form)
 
-@app.route*=('/login')
+@app.route('/login')
 def login():
     form = LoginForm()
     return render_template('login.html', title='Log In', form=form)
