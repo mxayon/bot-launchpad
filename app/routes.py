@@ -1,4 +1,5 @@
 from flask import render_template, url_for
+from forms import RegisterForm, LoginForm
 from app import app
 
 @app.route('/')
